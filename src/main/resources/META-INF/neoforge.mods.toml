@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+issueTrackerURL="https://github.com/Mrbysco/ExampleMod/issues"
+license="MIT"
+
+[[mods]]
+modId="weightedflight"
+version="${file.jarVersion}"
+displayName="Weighted Flight"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/weighted-flight"
+authors="Mrbysco"
+credits="Nekomaster1000"
+description='''
+Makes elytra flight slower the more armor you are wearing
+'''
+[[dependencies.weightedflight]]
+modId="minecraft"
+type="required"
+versionRange="[1.21,1.22)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.weightedflight]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.1,)"
+ordering="NONE"
+side="BOTH"
+[[mixins]]
+config="weightedflight.mixins.json"
